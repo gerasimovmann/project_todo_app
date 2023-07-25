@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 30px 0px 0px 0px;
+}
+
+ body {
+  background-color: rgb(14, 65, 103);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+
+}

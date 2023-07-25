@@ -1,0 +1,89 @@
+.appTodo {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(13, 49, 76);
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+
+}
+
+.appTodo.completedTodo {
+    background-color: transparent;
+    border: 1px solid rgba(136, 135, 135, 0.938);
+    
+}
+
+
+.appTodo.completedTodo h3 {
+    font-weight: 100;
+    color: rgba(136, 135, 135, 0.938);
+}
+
+
+.appTodo svg {
+    font-size: 25px;
+    transform-box: fill-box;
+    transition: all 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    cursor: pointer;
+}
+
+.appTodo svg:hover {
+    transition: all 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+.appTodo h3 {
+    width: 100%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.appTodo .iconTodo {
+    left: 12px;
+    
+}
+
+/* iconDone */
+.appTodo .iconDone {
+    right: 62px;
+}
+
+.appTodo .iconDone polygon {
+    fill: #ffff;
+}
+
+.appTodo .iconDone:hover > polygon {
+    fill: rgb(13, 194, 85); 
+}
+
+.appTodo .iconDone:hover {
+    transform: scale(1.3);
+}
+
+/* iconDel */
+.appTodo .iconDel {
+    right: 22px;
+    transition: all 0.15s ease-in;
+    transform-box: fill-box;
+}
+
+.appTodo .iconDel:hover {
+    transform: scale(1.3);
+}
+
+.appTodo .iconDel:hover > path {
+    transition: fill 0.15s ease-in;
+    fill: rgb(190, 46, 2);
+}
+
+.appTodo.completedTodo .iconDel,
+.appTodo.completedTodo .iconTodo g {
+    color: gray;
+    fill: gray;
+}
+.appTodo.completedTodo .iconDone polygon {
+    fill: rgb(13, 194, 85); 
+}

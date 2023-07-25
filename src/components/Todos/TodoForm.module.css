@@ -1,0 +1,27 @@
+.todoForm form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.todoForm form > input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    color: white;
+    border: 0;
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: rgb(13, 49, 76);
+}
+
+.todoForm input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.todoForm button {
+    font-size: 30px;
+}
+
+
